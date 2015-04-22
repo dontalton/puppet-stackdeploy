@@ -1,0 +1,18 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+# puppet default
+  - defaults
+  - "%{clientcert}"
+  - "%{environment}"
+  - global
+# stackdeploy custom
+  - shared
+  - controller
+  - controller_networking
+  - compute
+  - compute_networking
+  - nics/%{hostname}
+:yaml:
+  :datadir: /etc/puppet/modules/stackdeploy/hostdata/%{deploysite}
