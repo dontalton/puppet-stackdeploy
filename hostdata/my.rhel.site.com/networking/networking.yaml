@@ -1,0 +1,21 @@
+---
+network_interfaces:
+  environment:
+    my.site.com:
+      interfaces:
+        # if an interface doesn't use some of these parameters, it still needs 
+        # be listed, just leave it empty
+        physical:
+          enp7s0:
+            ip: 10.21.129.42    # IPADDR
+            nm: 255.255.255.0   # NETMASK
+            gw: 10.21.129.1     # GATEWAY
+            dr: yes             # DEFROUTE
+            mc: "00:11:22.etc"  # HWADDR
+            bp: "none"          # BOOTPROTO
+        vlans:
+          vlan23:
+            device: enp7s0
+        bridges:
+          br23:			# example unused param
+

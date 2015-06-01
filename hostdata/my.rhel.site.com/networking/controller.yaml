@@ -1,0 +1,24 @@
+---
+controller_hostinfo:
+  server1:
+    interfaces:
+      enp133s0:
+        ip: 192.168.2.254
+        nm: 255.255.254.0
+      enp6s0:
+        ip: 192.168.1.22
+  server2:
+    interfaces:
+      enp133s0:
+        ip: 192.168.2.253
+        nm: 255.255.254.0
+      enp6s0:
+        ip: 192.168.1.23
+  server3:
+    interfaces:
+      enp133s0:
+        ip: 192.168.2.252
+        nm: 255.255.254.0
+      enp6s0:
+        ip: 192.168.1.24
+
